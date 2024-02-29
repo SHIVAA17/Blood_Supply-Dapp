@@ -17,13 +17,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_31_094254) do
     t.integer "donated_time"
   end
 
-  create_table "bloodunits", force: :cascade do |t|
-    t.integer "blood_unique_id"
-    t.string "blood_group"
-    t.integer "donated_time"
-    t.integer "status"
-  end
-
   create_table "hospitals", force: :cascade do |t|
     t.string "address"
     t.string "name"
